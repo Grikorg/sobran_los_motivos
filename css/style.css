@@ -244,12 +244,12 @@ textarea {
     outline: none;
     padding: 20px 35px;
     text-transform: uppercase;
+    transition: 0.4s;
 }
 
 .boton_formulario:hover {
     background: #474544;
     color: #f2f3eb;
-    transition: 0.4s;
 }
 
 @media screen and (max-width: 1023px){
