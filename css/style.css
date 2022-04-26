@@ -250,6 +250,7 @@ textarea {
 .boton_formulario:hover {
     background: #474544;
     color: #f2f3eb;
+    transform:translateY(-10px);
 }
 
 @media screen and (max-width: 1023px){
