@@ -201,10 +201,6 @@ p{
     font-weight: bold;
 }
 
-/* form {
-    padding: 37.5px;
-    margin: 50px 0;
-} */
 
 form {
     border: solid 3px rgb(186, 141, 82);
@@ -253,6 +249,7 @@ textarea {
 .boton_formulario:hover {
     background: #474544;
     color: #f2f3eb;
+    transition: 0.4s;
 }
 
 @media screen and (max-width: 1023px){
