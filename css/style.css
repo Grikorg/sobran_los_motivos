@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap');
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url('https://fonts.googleapis.com/css2?family=Square+Peg&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: antiquewhite;
+    background-size: cover;
+}
+
+header{
+    background-color: antiquewhite;
+    background-size: cover;
+    padding-bottom: 20px;
+    margin-top: 30px;
+    display: grid;
+    grid-template-rows: repeat(2, 50%);
+    grid-row-gap: 40px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    border: 1px solid rgb(186, 141, 82);
+    border-radius: 360px;
+    padding: 10px;
+    background-color: rgb(186, 141, 82);
+    font-family: "Montserrat", Arial, sans-serif;
+    justify-self: center;
+}
+
+/* Pongo fondo Beige */
+
+main{
+    background-size: cover;
+    background-color: antiquewhite;
+}
+
+
+/* Agrego texto en medio de la imagen con negrita y sobreado */
+.contenedor{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+.centrado{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    color: black;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px black;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+/* Cambio estilo al footer y lo centro */
+
+footer{
+    display: grid;
+    justify-content: center;
+
+}
+
+.social{
+    display: grid;
+    grid-template-columns: repeat(3, 33.40%);
+}
+
+.social a{
+    width: 100px;
+    height: 100px;
+    border-radius: 300px;
+    display: flex;
+    cursor: pointer;
+    text-decoration: none;
+    transition: 0.4s;
+}
+
+.social >a:hover{
+    transform:translateY(-10px);
+}
+
+h1{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 50px;
+    text-align: center;
+    background-color: rgb(118,81,50);
+    color: white;
+    padding: 20px;;
+}
+
+.tienda{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 50px;
+    text-align: center;
+    background-color: rgb(118,81,50);
+    color: white;
+    margin-bottom: 20px;
+}
+
+.textos_tienda{
+    margin: auto;
+}
+
+.textos_tienda th{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 30px;
+    color: white;
+    background-color: rgb(186, 141, 82);
+    height: 80px;
+}
+
+.textos_tienda_2{
+    margin: auto;
+}
+
+.textos_tienda_2 th{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 30px;
+    color: white;
+    background-color: rgb(186, 141, 82);
+    height: 80px;
+}
+
+.quienes_somos{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(2, 400px);
+    align-items: center;
+    grid-column-gap: 20px;
+    grid-row-gap: 30px;
+    background-color: rgb(220, 191, 154);
+    padding: 20px;
+}
+
+.parrafo_1{
+    border-radius: 20px;
+    font-family: 'Square Peg', cursive;
+    font-size: 30px;
+    align-self: center;
+    padding: 20px;
+}
+
+.parrafo_2{
+    border-radius: 20px;
+    font-family: 'Square Peg', cursive;
+    font-size: 30px;
+    align-self: center;
+    padding: 20px;
+}
+
+.q_s_1{
+    width: 95%;
+    height: 100%;
+    display: block;
+    text-align: center;
+    margin: auto;
+    border-radius: 30px;
+}
+.q_s_2{
+    width: 100%;
+    height: 100%;
+    display: block;
+    text-align: center;
+    margin: auto;
+    border-radius: 30px;
+}
+
+h3{
+    margin-top: 40px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    background-color: rgb(186, 141, 82);
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+div img{
+    display: block;
+    text-align: center;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+p{
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+/* form {
+    padding: 37.5px;
+    margin: 50px 0;
+} */
+
+form {
+    border: solid 3px rgb(186, 141, 82);
+    max-width: 400px;
+    margin: 50px auto;
+    position: relative;
+    background-color: rgb(186, 141, 82);
+    padding: 20px;
+}
+
+input{
+    line-height: normal;
+}
+
+input[type="text"],
+[type="email"],
+textarea {
+    font-family: "Montserrat", Arial, sans-serif;
+    background: none;
+    border: none;
+    border-bottom: solid 2px white;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin: 10px 0px 30px 0px;
+    padding: 0px 0px 15px 0px;
+    width: 100%;
+}
+
+
+.boton_formulario{
+    background: bisque;
+    border: solid 2px bisque;
+    color: #474544;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Montserrat", Arial, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    outline: none;
+    padding: 20px 35px;
+    text-transform: uppercase;
+}
+
+.boton_formulario:hover {
+    background: #474544;
+    color: #f2f3eb;
+}
+
+@media screen and (max-width: 1023px){
+    
+    .parrafo_1{
+        border-radius: 20px;
+        font-family: 'Square Peg', cursive;
+        font-size: 20px;
+        align-self: center;
+        padding: 20px;
+    }
+
+    .parrafo_2{
+        border-radius: 20px;
+        font-family: 'Square Peg', cursive;
+        font-size: 20px;
+        align-self: center;
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 545px){
+    
+    .parrafo_1{
+        border-radius: 20px;
+        font-family: 'Square Peg', cursive;
+        font-size: 15px;
+        align-self: center;
+        padding: 20px;
+    }
+
+    .parrafo_2{
+        border-radius: 20px;
+        font-family: 'Square Peg', cursive;
+        font-size: 15px;
+        align-self: center;
+        padding: 20px;
+    }
+
+}
