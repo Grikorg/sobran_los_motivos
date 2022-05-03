@@ -98,40 +98,79 @@ h1{
     padding: 20px;;
 }
 
-.tienda{
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 50px;
+.grid-container-tienda {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 1fr;
+    padding: 20px;
+    grid-gap: 10px;
+}
+
+.item_tienda{
+    position: relative;
+}
+
+.titulos_tienda{
+    position: absolute;
+    bottom: 0;
+    color: white;
+    background: #9e6730;
+    width: 100%;
+    margin: 0;
     text-align: center;
-    background-color: rgb(118,81,50);
-    color: white;
-    margin-bottom: 20px;
 }
 
-.textos_tienda{
-    margin: auto;
+.imagen_tienda{
+    width: auto;
+    height: auto;
+    object-fit: cover;
 }
 
-.textos_tienda th{
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 30px;
-    color: white;
-    background-color: rgb(186, 141, 82);
-    height: 80px;
+
+.grid-container-conocenos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 1fr;
+    grid-gap: 5px;
+    grid-template-areas: 
+    "tq1 iq1"
+    "iq2 tq2";
+    text-align: center;
+    align-items: center;
 }
 
-.textos_tienda_2{
-    margin: auto;
+.tq2{
+    font-size: 1rem;
 }
 
-.textos_tienda_2 th{
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 30px;
-    color: white;
-    background-color: rgb(186, 141, 82);
-    height: 80px;
+.tq1{
+    font-size: 1rem;
 }
 
-.quienes_somos{
+
+.item1{
+    grid-area: iq1;
+}
+
+.item2{
+    grid-area: iq2;
+}
+
+.item3{
+    grid-area: tq1;
+}
+
+.item4{
+    grid-area: tq2;
+}
+
+.imagen_conocenos{
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+/* .quienes_somos{
     margin-top: 20px;
     display: grid;
     grid-template-columns: repeat(2, 50%);
@@ -174,25 +213,41 @@ h1{
     text-align: center;
     margin: auto;
     border-radius: 30px;
+} */
+
+
+.grid-container-taller {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 1fr;
+    padding: 20px;
+    grid-gap: 10px;
 }
 
-h3{
-    margin-top: 40px;
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 30px;
-    text-align: center;
-    background-color: rgb(186, 141, 82);
+.item_taller{
+    position: relative;
+}
+
+.titulos_taller{
+    position: absolute;
+    bottom: 0;
     color: white;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    background: #9e6730;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+}
+
+.imagen_taller{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 div img{
-    display: block;
-    text-align: center;
-    margin: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 p{
@@ -251,6 +306,67 @@ textarea {
     background: #474544;
     color: #f2f3eb;
     transform:translateY(-10px);
+}
+
+@media screen and (max-width: 768px){
+    
+    .grid-container-tienda {
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 1fr;
+        padding: 20px;
+        grid-gap: 10px;
+    }
+    
+    .titulos_tienda{
+        position: absolute;
+        bottom: 0;
+        color: white;
+        background: #9e6730;
+        width: 100%;
+        margin: 0;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .grid-container-taller {
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 1fr;
+        padding: 20px;
+        grid-gap: 10px;
+    }
+    
+    .titulos_taller{
+        position: absolute;
+        bottom: 0;
+        color: white;
+        background: #9e6730;
+        width: 100%;
+        margin: 0;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .grid-container-conocenos {
+        grid-template-columns: repeat(1, 1fr);
+        grid-auto-rows: 1fr;
+        grid-gap: 5px;
+        grid-template-areas: 
+        "tq1" 
+        "iq1"
+        "tq2"
+        "iq2";
+        text-align: center;
+        align-items: center;
+    }
+    
+    .tq2{
+        font-size: 20px;
+    }
+    
+    .tq1{
+        font-size: 20px;
+    }
+    
 }
 
 @media screen and (max-width: 1023px){
