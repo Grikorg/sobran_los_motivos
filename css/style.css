@@ -24,10 +24,12 @@ header{
     align-items: center;
 }
 
+
+
 nav{
     display: flex;
-    justify-content: space-around;
-    width: 500px;
+    justify-content: center;
+    width: 100%;
     flex-wrap: wrap;
 }
 
@@ -48,7 +50,7 @@ nav a:hover{
     background: rgb(118,81,50);
     border-color: rgb(118,81,50);
     color: #f2f3eb;
-    transform:translateY(-10px);
+    transform:translateY(-5px);
 }
 
 /* Pongo fondo Beige */
@@ -373,6 +375,11 @@ textarea {
         font-size: 15px;
         align-self: center;
         padding: 20px;
+    }
+
+    .logo{
+        height: 30px;
+        width: 300px;
     }
 
 }
